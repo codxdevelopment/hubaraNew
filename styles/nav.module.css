@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/LaoMN-01.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/LaoMN-Bold-02.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.regularFont {
+  font-family: "regular", sans-serif;
+}

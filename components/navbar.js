@@ -1,25 +1,25 @@
-import * as React from 'react';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/Home.module.css';
-import Link from 'next/link';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
-import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import List from '@mui/material/List';
-import Drawer from '@mui/material/Drawer';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
+import * as React from "react";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/Home.module.css";
+import Link from "next/link";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Unstable_Grid2";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import List from "@mui/material/List";
+import Drawer from "@mui/material/Drawer";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import navStyles from "../styles/nav.module.css";
+const name = "Hubara";
+export const siteTitle = "Hubara | Luxury Clothing Brand Dubai | UAE";
 
-const name = 'Hubara';
-export const siteTitle = 'Hubara | Luxury Clothing Brand Dubai | UAE';
- 
 export default function Navbar({ home }) {
   const [open, setOpen] = React.useState(false);
 
@@ -27,17 +27,27 @@ export default function Navbar({ home }) {
     setOpen(newOpen);
   };
 
+  const menuTitles = ["About Hubara", "What's New", "Men", "Women", "Shop By"];
+
+  const menuItems = menuTitles.map((title, index) => (
+    <ListItem key={index}>
+      <Link className={navStyles.regularFont} href="/">
+        {title}
+      </Link>
+    </ListItem>
+  ));
+
   return (
     <>
       <Container maxWidth="lg">
         <Box sx={{ flexGrow: 1 }}>
           {home ? (
             <Box sx={{ flexGrow: 1 }}>
-              <Grid 
-              container
-              spacing={2}
-              justifyContent="center"
-              alignItems="center"
+              <Grid
+                container
+                spacing={2}
+                justifyContent="center"
+                alignItems="center"
               >
                 <Image
                   priority
@@ -50,14 +60,17 @@ export default function Navbar({ home }) {
               </Grid>
             </Box>
           ) : (
-            <Box sx={{ flexGrow: 1}}>
-              <Grid container spacing={2} sx={{ display: { xs: 'none', md: 'flex' } }}
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              className="py-5"
+            <Box sx={{ flexGrow: 1 }}>
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: { xs: "none", md: "flex" } }}
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                className="py-5"
               >
-                <Grid xs={3} >
+                <Grid xs={3}>
                   <Link href="/">
                     <Image
                       priority
@@ -68,7 +81,7 @@ export default function Navbar({ home }) {
                     />
                   </Link>
                 </Grid>
-                <Grid xs={6}   >
+                <Grid xs={6}>
                   <Link href="/" className="flex justify-center">
                     <Image
                       priority
@@ -110,14 +123,22 @@ export default function Navbar({ home }) {
                   />
                 </Grid>
               </Grid>
-              <Grid container spacing={2} sx={{ display: { xs: 'flex', md: 'none' }, borderBottomWidth: 1 }}
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              className="py-2"
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: { xs: "flex", md: "none" },
+                  borderBottomWidth: 1,
+                }}
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                className="py-2"
               >
-                <Grid xs={3} >
-                  <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                <Grid xs={3}>
+                  <Box
+                    sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+                  >
                     <IconButton
                       size="large"
                       aria-label="account of current user"
@@ -128,42 +149,52 @@ export default function Navbar({ home }) {
                     >
                       <MenuIcon />
                     </IconButton>
-                  <Drawer open={open} onClose={toggleDrawer(false)}>
-                  <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-                    <List>
-                      <ListItem>
-                        <Link href="/">
-                          <ListItemText primary={'About Hubara'} />
-                        </Link>
-                      </ListItem>
-                      <ListItem >  
-                        <Link href="/">
-                          <ListItemText primary={"What's New"} />
-                        </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link href="/">
-                          <ListItemText primary={'Men'} />
-                        </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link href="/">
-                          <ListItemText primary={'Women'} />
-                        </Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link href="/">
-                          <ListItemText primary={'Shop By'} />
-                        </Link>
-                      </ListItem>
-                    </List>
-                    <Divider />
+                    <Drawer open={open} onClose={toggleDrawer(false)}>
+                      <Box
+                        sx={{ width: 250 }}
+                        role="presentation"
+                        onClick={toggleDrawer(false)}
+                      >
+                        <List>
+                          <ListItem>
+                            <Link href="/">
+                              <ListItemText
+                                primary={"About Hubara"}
+                                className={navStyles.regularFont}
+                              />
+                            </Link>
+                          </ListItem>
+                          <ListItem>
+                            <Link href="/">
+                              <ListItemText primary={"What's New"} />
+                            </Link>
+                          </ListItem>
+                          <ListItem>
+                            <Link href="/">
+                              <ListItemText primary={"Men"} />
+                            </Link>
+                          </ListItem>
+                          <ListItem>
+                            <Link href="/">
+                              <ListItemText primary={"Women"} />
+                            </Link>
+                          </ListItem>
+                          <ListItem>
+                            <Link href="/">
+                              <ListItemText primary={"Shop By"} />
+                            </Link>
+                          </ListItem>
+                        </List>
+                        <Divider />
+                      </Box>
+                    </Drawer>
                   </Box>
-                  </Drawer>
-                </Box>
                 </Grid>
-                <Grid xs={6} >
-                  <Link href="/" className='flex flex-col items-center justify-items-center'>
+                <Grid xs={6}>
+                  <Link
+                    href="/"
+                    className="flex flex-col items-center justify-items-center"
+                  >
                     <Image
                       priority
                       src="/images/bird-logo.png"
@@ -201,37 +232,29 @@ export default function Navbar({ home }) {
           )}
         </Box>
       </Container>
-      <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, borderTopWidth: 2, borderBottomWidth: 2, borderColor: '#9a8254 '  }} >
-        <AppBar position="static" style={{ background: 'transparent' }}>
+      <Box
+        sx={{
+          flexGrow: 1,
+          display: { xs: "none", md: "flex" },
+          borderTopWidth: 2,
+          borderBottomWidth: 2,
+          borderColor: "#9a8254 ",
+        }}
+      >
+        <AppBar position="static" style={{ background: "transparent" }}>
           <Container maxWidth="xl">
             <Toolbar disableGutters>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center'} }}>
-                <List sx={{ color:"#000", display: 'flex'}} className={utilStyles.menuListing} >
-                  <ListItem>
-                    <Link href="/">
-                      <ListItemText primary={'About Hubara'} />
-                    </Link>
-                  </ListItem>
-                  <ListItem>  
-                    <Link href="/">
-                      <ListItemText primary={"What's New"} />
-                    </Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link href="/">
-                      <ListItemText primary={'Men'} />
-                    </Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link href="/">
-                      <ListItemText primary={'Women'} />
-                    </Link>
-                  </ListItem>
-                  <ListItem>
-                    <Link href="/">
-                      <ListItemText primary={'Shop By'} />
-                    </Link>
-                  </ListItem>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: "none", md: "flex", justifyContent: "center" },
+                }}
+              >
+                <List
+                  sx={{ color: "#000", display: "flex" }}
+                  className={utilStyles.menuListing}
+                >
+                  {menuItems}
                 </List>
               </Box>
             </Toolbar>
@@ -239,5 +262,5 @@ export default function Navbar({ home }) {
         </AppBar>
       </Box>
     </>
-  )
+  );
 }

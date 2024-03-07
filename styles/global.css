@@ -6,19 +6,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -33,4 +22,20 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("/fonts/LaoMN-01.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("/fonts/LaoMN-Bold-02.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
