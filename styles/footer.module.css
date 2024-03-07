@@ -1,0 +1,21 @@
+.divider {
+  background-color: var(--primary-color);
+  height: 5px;
+}
+
+.footerTitle {
+  font-family: "bold", "sans-serif";
+  font-size: 15;
+}
+
+.footerItems {
+  font-family: "regular", "sans-serif";
+  font-size: 15;
+  color: black;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footerItems:hover {
+  color: var(--primary-color);
+}

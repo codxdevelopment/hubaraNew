@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import GlobalStyles from "../styles/global.css";
-import "../styles/fonts.css";
 import { AppCacheProvider } from "@mui/material-nextjs/v13-pagesRouter";
 import { NextUIProvider } from "@nextui-org/react";
 

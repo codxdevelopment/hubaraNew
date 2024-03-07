@@ -32,7 +32,7 @@ export default function Navbar({ home }) {
   const menuItems = menuTitles.map((title, index) => (
     <ListItem key={index}>
       <Link className={navStyles.regularFont} href="/">
-        {title}
+        {title.toUpperCase()}
       </Link>
     </ListItem>
   ));
@@ -155,36 +155,7 @@ export default function Navbar({ home }) {
                         role="presentation"
                         onClick={toggleDrawer(false)}
                       >
-                        <List>
-                          <ListItem>
-                            <Link href="/">
-                              <ListItemText
-                                primary={"About Hubara"}
-                                className={navStyles.regularFont}
-                              />
-                            </Link>
-                          </ListItem>
-                          <ListItem>
-                            <Link href="/">
-                              <ListItemText primary={"What's New"} />
-                            </Link>
-                          </ListItem>
-                          <ListItem>
-                            <Link href="/">
-                              <ListItemText primary={"Men"} />
-                            </Link>
-                          </ListItem>
-                          <ListItem>
-                            <Link href="/">
-                              <ListItemText primary={"Women"} />
-                            </Link>
-                          </ListItem>
-                          <ListItem>
-                            <Link href="/">
-                              <ListItemText primary={"Shop By"} />
-                            </Link>
-                          </ListItem>
-                        </List>
+                        <List>{menuItems}</List>
                         <Divider />
                       </Box>
                     </Drawer>

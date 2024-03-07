@@ -24,6 +24,11 @@ img {
   height: auto;
 }
 
+:root {
+  --primary-color: #9a8254;
+}
+/*  */
+
 @font-face {
   font-family: "regular";
   src: url("/fonts/LaoMN-01.ttf");
