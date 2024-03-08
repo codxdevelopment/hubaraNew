@@ -4,6 +4,8 @@ import React from "react";
 import footerStyles from "../styles/footer.module.css";
 import { Spacer } from "@nextui-org/react";
 import Image from "next/image";
+
+import { Input } from "@nextui-org/react";
 export default function Footer({ Component, pageProps }) {
   const customerCareItems = () => {
     const items = [
@@ -138,6 +140,44 @@ export default function Footer({ Component, pageProps }) {
                   width={25}
                   style={{ position: "absolute", top: 0.0, left: "4.5rem" }} // Adjust left position as needed
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Spacer y={50} />
+      <hr class="h-0.5 bg-black" />
+
+      <Spacer y={50} />
+
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-12 gap-4">
+          <div class="bg-white col-span-3">
+            <p className={footerStyles.allNews}>ALL NEWS IS GOOD NEWS</p>
+            <Spacer y={5} />
+            <p className={footerStyles.allDetails}>
+              Be the first to know about new arrivals, online promotions and
+              more when you sign up to receive our emails.
+            </p>
+          </div>
+          <div class="bg-white col-span-3"></div>
+          <div class="bg-white col-span-2 "></div>
+
+          <div class="bg-white col-span-4 ">
+            <div class="grid grid-cols-12">
+              <div class="col-span-8 bg-white">
+                <div class="w-full h-75 border border-black rounded-sm p-1">
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    className={`w-full px-4 py-2 rounded-sm focus:outline-none ${footerStyles.allDetails}`}
+                  />
+                </div>
+              </div>
+              <div class="col-span-4 bg-white w-full flex justify-center items-center">
+                <div class={`p-3  rounded-sm ${footerStyles.subscribeBtn}`}>
+                  Subscribe
+                </div>
               </div>
             </div>
           </div>

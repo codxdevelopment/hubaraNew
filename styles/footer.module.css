@@ -8,6 +8,15 @@
   font-size: 15;
 }
 
+.allNews {
+  font-family: "bold", "sans-serif";
+  font-size: 18;
+}
+.allDetails {
+  font-family: "regular", "sans-serif";
+  font-size: 12pt;
+}
+
 .footerItems {
   font-family: "regular", "sans-serif";
   font-size: 15;
@@ -18,4 +27,9 @@
 
 .footerItems:hover {
   color: var(--primary-color);
+}
+.subscribeBtn {
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
 }
