@@ -5,12 +5,12 @@ import { NextUIProvider } from "@nextui-org/react";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <AppCacheProvider {...pageProps}>
-      <Layout>
-        <NextUIProvider>
+    <NextUIProvider>
+      <AppCacheProvider {...pageProps}>
+        <Layout>
           <Component {...pageProps} />
-        </NextUIProvider>
-      </Layout>
-    </AppCacheProvider>
+        </Layout>
+      </AppCacheProvider>
+    </NextUIProvider>
   );
 }
