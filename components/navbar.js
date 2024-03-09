@@ -36,23 +36,23 @@ export default function Navbar({ home }) {
   const menuTitles = [
     {
       title: 'About Hubara',
-      link: '/'
+      link: '/about'
     },
     {
       title: "What's New",
-      link: '/'
+      link: '/whats-new'
     },
     {
       title: 'Men',
-      link: '/'
+      link: '/men'
     },
     {
       title: 'Women',
-      link: '/'
+      link: '/women'
     },
     {
       title: 'Shop By',
-      link: '/'
+      link: '/shop'
     },
   ];
 // Setting up menus in a global array
