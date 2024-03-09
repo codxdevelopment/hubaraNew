@@ -36,7 +36,7 @@ export default function Navbar({ home }) {
   const menuTitles = [
     {
       title: 'About Hubara',
-      link: '/about'
+      link: '/about-us'
     },
     {
       title: "What's New",
