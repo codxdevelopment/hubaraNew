@@ -73,13 +73,13 @@ export default function Footer({ Component, pageProps }) {
     <>
       <hr className={footerStyles.divider}></hr>
       <Spacer y={10} />
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="bg-white">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="bg-white">
             <p className={footerStyles.footerTitle}>CUSTOMER CARE</p>
             {customerCareItems()}
           </div>
-          <div class="bg-white">
+          <div className="bg-white">
             <p className={footerStyles.footerTitle}>ABOUT US</p>
             {aboutUsSectionItems()}
             <Spacer y={2.5} />
@@ -113,8 +113,8 @@ export default function Footer({ Component, pageProps }) {
               />
             </div>
           </div>
-          <div class="bg-white"></div>
-          <div class="bg-white flex justify-center items-center h-full">
+          <div className="bg-white"></div>
+          <div className="bg-white flex justify-center items-center h-full">
             <div className={footerStyles.footerItems}>
               <Spacer y={2.5} />
               <p className={footerStyles.footerItems}>
@@ -146,13 +146,13 @@ export default function Footer({ Component, pageProps }) {
         </div>
       </div>
       <Spacer y={50} />
-      <hr class="h-0.5 bg-black" />
+      <hr className="h-0.5 bg-black" />
 
       <Spacer y={50} />
 
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-12 gap-4">
-          <div class="bg-white col-span-3">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-12 gap-4">
+          <div className="bg-white col-span-3">
             <p className={footerStyles.allNews}>ALL NEWS IS GOOD NEWS</p>
             <Spacer y={5} />
             <p className={footerStyles.allDetails}>
@@ -160,13 +160,13 @@ export default function Footer({ Component, pageProps }) {
               more when you sign up to receive our emails.
             </p>
           </div>
-          <div class="bg-white col-span-3"></div>
-          <div class="bg-white col-span-2 "></div>
+          <div className="bg-white col-span-3"></div>
+          <div className="bg-white col-span-2 "></div>
 
-          <div class="bg-white col-span-4 ">
-            <div class="grid grid-cols-12">
-              <div class="col-span-8 bg-white">
-                <div class="w-full h-75 border border-black rounded-sm p-1">
+          <div className="bg-white col-span-4 ">
+            <div className="grid grid-cols-12">
+              <div className="col-span-8 bg-white">
+                <div className="w-full h-75 border border-black rounded-sm p-1">
                   <input
                     type="email"
                     placeholder="Email Address"
@@ -174,8 +174,8 @@ export default function Footer({ Component, pageProps }) {
                   />
                 </div>
               </div>
-              <div class="col-span-4 bg-white w-full flex justify-center items-center">
-                <div class={`p-3  rounded-sm ${footerStyles.subscribeBtn}`}>
+              <div className="col-span-4 bg-white w-full flex justify-center items-center">
+                <div className={`p-3  rounded-sm ${footerStyles.subscribeBtn}`}>
                   Subscribe
                 </div>
               </div>

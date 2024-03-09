@@ -86,9 +86,19 @@
 .logo {
   height: 1em;
 }
-
+.rootContainer{
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.menuToolbar{
+  min-height: 52px !important;
+}
+.menuListing {
+  padding: 0 !important;
+}
 .menuListing > li{
   width: fit-content !important;
+  text-transform: uppercase;
 }
 
 @media (max-width: 600px) {

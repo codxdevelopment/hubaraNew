@@ -1,6 +1,11 @@
 .regularFont {
   font-family: "regular", sans-serif;
-  font-size: 16pt;
+  font-size: 15pt;
+  transition: color 0.3s;
+}
+.normalFont {
+  font-family: "regular", sans-serif;
+  font-size: 12pt;
   transition: color 0.3s;
 }
 
