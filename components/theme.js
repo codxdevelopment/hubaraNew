@@ -1,4 +1,5 @@
 import LaoMNttf1 from './fonts/LaoMN-01.ttf';
+import LaoMNttf2 from './fonts/LaoMN-Bold-02.ttf';
 
 const theme = createTheme({
   typography: {
