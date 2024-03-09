@@ -4,7 +4,7 @@ import React from "react";
 import footerStyles from "../styles/footer.module.css";
 import { Spacer } from "@nextui-org/react";
 import Image from "next/image";
-
+import Divider from "@mui/material/Divider";
 import { Input } from "@nextui-org/react";
 export default function Footer({ Component, pageProps }) {
   const customerCareItems = () => {
@@ -72,7 +72,7 @@ export default function Footer({ Component, pageProps }) {
   return (
     <>
       <hr className={footerStyles.divider}></hr>
-      <Spacer y={10} />
+      <Spacer y={12} />
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="bg-white">
@@ -114,30 +114,29 @@ export default function Footer({ Component, pageProps }) {
             </div>
           </div>
           <div className="bg-white"></div>
-          <div className="bg-white flex justify-center items-center h-full">
+          <div className="bg-white flex justify-start items-center h-full">
             <div className={footerStyles.footerItems}>
-              <Spacer y={2.5} />
               <p className={footerStyles.footerItems}>
                 {"Hubara Design Accetps"}
               </p>
-
+              <Spacer y={5} />
               <div style={{ position: "relative" }}>
                 <Image
                   src={"https://hubara.com/images/icons/Mastercard.svg"}
-                  height={25}
-                  width={25}
+                  height={30}
+                  width={30}
                   style={{ position: "absolute", top: 0, left: 0 }}
                 />
                 <Image
                   src={"https://hubara.com/images/icons/Visa.svg"}
-                  height={30}
-                  width={30}
+                  height={35}
+                  width={35}
                   style={{ position: "absolute", top: -2.0, left: "2.0rem" }} // Adjust left position as needed
                 />
                 <Image
                   src={"https://hubara.com/images/apple-pay.png"}
-                  height={25}
-                  width={25}
+                  height={30}
+                  width={30}
                   style={{ position: "absolute", top: 0.0, left: "4.5rem" }} // Adjust left position as needed
                 />
               </div>
@@ -146,27 +145,27 @@ export default function Footer({ Component, pageProps }) {
         </div>
       </div>
       <Spacer y={50} />
-      <hr className="h-0.5 bg-black" />
+      {/* <hr className="h-0.5 bg-black" /> */}
+      <Divider variant="middle" className="h-0.05 bg-black"/>
 
-      <Spacer y={50} />
+      <Spacer y={5} />
 
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-12 gap-4">
-          <div class="bg-white col-span-3">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-12 gap-4">
+          <div className="bg-white col-span-3">
             <p className={footerStyles.allNews}>ALL NEWS IS GOOD NEWS</p>
-            <Spacer y={5} />
-            <p className={footerStyles.allDetails}>
+            <Spacer y={1} />
+            <p className={footerStyles.promotionsText}>
               Be the first to know about new arrivals, online promotions and
               more when you sign up to receive our emails.
             </p>
           </div>
-          <div className="bg-white col-span-3"></div>
+          <div className="bg-white col-span-2"></div>
           <div className="bg-white col-span-2 "></div>
-
-          <div className="bg-white col-span-4 ">
+          <div className="bg-white col-span-5 pl-14">
             <div className="grid grid-cols-12">
-              <div className="col-span-8 bg-white">
-                <div className="w-full h-75 border border-black rounded-sm p-1">
+              <div className="col-span-7 bg-white">
+                <div className={`w-full h-75 border border-black rounded-sm p-1 ${footerStyles.subscribeInput}`}>
                   <input
                     type="email"
                     placeholder="Email Address"
@@ -174,11 +173,13 @@ export default function Footer({ Component, pageProps }) {
                   />
                 </div>
               </div>
-              <div class="col-span-4 bg-white w-full flex justify-center items-center">
-                <div class={`p-3  rounded-sm ${footerStyles.subscribeBtn}`}>
+              <div className="col-span-5 bg-white w-full flex justify-center items-center">
+                <div className={`py-3 rounded-sm  ${footerStyles.subscribeBtn}`}>
                   Subscribe
                 </div>
               </div>
+              <div className="col-span-12">
+                <span className={footerStyles.consentText}>By entering email address, you agree to our Privacy Policy and you may unsubscribe at any time.</span></div>
             </div>
           </div>
         </div>
