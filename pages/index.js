@@ -10,7 +10,6 @@ export default function Home() {
         <title>Hubara</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout />
     </div>
   );
 }

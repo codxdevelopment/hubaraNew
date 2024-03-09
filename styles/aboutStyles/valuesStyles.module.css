@@ -1,0 +1,24 @@
+.parent {
+  animation-delay: 0.5s;
+  opacity: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.values {
+  font-size: 34px;
+  font-family: "regular";
+  color: var(--textBlackColor);
+  margin: 0 0 2rem;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
