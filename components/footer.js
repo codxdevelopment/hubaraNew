@@ -150,9 +150,9 @@ export default function Footer({ Component, pageProps }) {
 
       <Spacer y={50} />
 
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-12 gap-4">
-          <div className="bg-white col-span-3">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-12 gap-4">
+          <div class="bg-white col-span-3">
             <p className={footerStyles.allNews}>ALL NEWS IS GOOD NEWS</p>
             <Spacer y={5} />
             <p className={footerStyles.allDetails}>
@@ -174,8 +174,8 @@ export default function Footer({ Component, pageProps }) {
                   />
                 </div>
               </div>
-              <div className="col-span-4 bg-white w-full flex justify-center items-center">
-                <div className={`p-3  rounded-sm ${footerStyles.subscribeBtn}`}>
+              <div class="col-span-4 bg-white w-full flex justify-center items-center">
+                <div class={`p-3  rounded-sm ${footerStyles.subscribeBtn}`}>
                   Subscribe
                 </div>
               </div>
