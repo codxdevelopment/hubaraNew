@@ -1,0 +1,138 @@
+.parent {
+  animation-delay: 0.5s;
+  opacity: 0;
+  padding-left: 125px;
+  padding-right: 125px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sectionTitles {
+    margin-top: 30px;
+  }
+}
+
+.title {
+  color: var(--textBlackColor);
+  font-size: 30px;
+  font-family: "regular";
+  font-weight: 600;
+  line-height: 1.4;
+}
+.paragraphText {
+  font-size: 16px;
+  font-family: "regular";
+  line-height: 24px;
+  text-align: justify;
+  font-weight: 400;
+  color: var(--textGrayColor);
+}
+
+.values {
+  font-size: 34px;
+  color: var(--textBlackColor);
+  font-family: "regular";
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.valuesContentParent {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../public/images/man1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff !important;
+  letter-spacing: 15px;
+  line-height: 40px;
+  font-size: 40px;
+  font-family: "regular";
+  text-align: center;
+}
+
+.valuesContentParentFeatherImage {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../public/images/feather.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff !important;
+  letter-spacing: 15px;
+  line-height: 40px;
+  font-size: 40px;
+  font-family: "regular";
+  text-align: center;
+}
+
+.valuesContentParentDunsImage {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../public/images/dunes.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff !important;
+  letter-spacing: 15px;
+  line-height: 40px;
+  font-size: 40px;
+  font-family: "regular";
+  text-align: center;
+}
+
+.valuesContentParentMan2Image {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../public/images/man2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff !important;
+  letter-spacing: 15px;
+  line-height: 40px;
+  font-size: 40px;
+  font-family: "regular";
+  text-align: center;
+}
+
+.storyBgDiv {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../public/images/man3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.storyBgMan4Div {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../public/images/man4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.storyBgMen4Div {
+  height: 600px;
+  width: 100%;
+  background-image: url("../../public/images/men.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sectionTitles {
+  color: var(--textBlackColor);
+  font-size: 30px;
+  font-family: "regular";
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

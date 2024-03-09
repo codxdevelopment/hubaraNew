@@ -5,7 +5,6 @@
 
 .titleText {
   font-family: "regular", "sans-serif";
-  font-size: 24px;
   color: var(--textBlackColor);
   line-height: 1.4;
   letter-spacing: 5px;

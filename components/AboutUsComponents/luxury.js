@@ -6,12 +6,17 @@ const Luxury = () => {
   return (
     <>
       <div className={luxuryStyles.parent}>
-        <div className={luxuryStyles.titleText}>{"WHERE LUXURY STYLE"}</div>
-        <div className={luxuryStyles.titleText}>{"MEETS NATURE"}</div>
+        <div className={`text-2xl md:text-4xl ${luxuryStyles.titleText}`}>
+          {"WHERE LUXURY STYLE"}
+        </div>
+        <div className={`text-2xl md:text-4xl ${luxuryStyles.titleText}`}>
+          {"MEETS NATURE"}
+        </div>
         <Spacer y={10} />
         <div className={luxuryStyles.understatedText}>
           {"A WORLD OF UNDERSTATED ELEGANCE WITH HUBARA DESIGN"}
         </div>
+        <Spacer y={15} />
       </div>
     </>
   );
