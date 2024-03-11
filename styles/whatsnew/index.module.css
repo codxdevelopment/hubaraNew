@@ -1,0 +1,59 @@
+.parent {
+  animation-delay: 0.5s;
+  opacity: 0;
+  padding-left: 125px;
+  padding-right: 125px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .collection {
+    margin-top: 30px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bannerBg {
+  height: 440px;
+  background-image: url("../../public/images/whatsNewImages/whats-new-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "regular";
+  font-size: 50px;
+  color: white;
+  background-position: 10% 20%;
+}
+
+.collection {
+  font-family: "regular";
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 12px;
+  color: var(--textBlackColor);
+}
+
+.paragraph {
+  font-family: "regular";
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding: 20px 0px;
+  color: var(--textGrayColor);
+}
+.man7 {
+  background-image: url("../../public/images/whatsNewImages/man7.png");
+  background-size: cover;
+  min-height: 368px;
+}
