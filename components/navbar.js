@@ -65,7 +65,7 @@ export default function Navbar({ home }) {
   ));
   return (
     <>
-      <Container maxWidth="lg" className={utilStyles.rootContainer}>
+      <Container maxWidth="lg" className={utilStyles.headerContainer}>
         <Box sx={{ flexGrow: 1 }}>
           {home ? (
             <Box sx={{ flexGrow: 1 }}>

@@ -1,18 +1,21 @@
 .parent {
   animation-delay: 0.5s;
   opacity: 0;
-  padding-left: 125px;
-  padding-right: 125px;
+  max-width: 74%;
   animation: fadeIn 1s ease-in-out forwards;
 }
 
 @media only screen and (max-width: 600px) {
   .parent {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 90%;
   }
   .sectionTitles {
     margin-top: 30px;
+  }
+  .paragraphText{
+    padding-bottom: 20px !important;
   }
 }
 
@@ -29,7 +32,7 @@
   line-height: 24px;
   text-align: justify;
   font-weight: 400;
-  color: var(--textGrayColor);
+  color: var(--textBlackColor);
 }
 
 .values {

@@ -5,7 +5,7 @@ import { Spacer } from "@nextui-org/react";
 import man1 from "../../public/images/man1.png";
 const Story = () => {
   return (
-    <div class={`container mx-auto px-4 ${storyStyles.parent}`}>
+    <div className={`container mx-auto px-5 px-sm-0 ${storyStyles.parent}`}>
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-12 md:col-span-6 ">
           <Image
@@ -139,7 +139,7 @@ const Story = () => {
                 The Hubara's Vision
               </p>
               <Spacer y={3} />
-              <p className={storyStyles.paragraphText}>
+              <p className={storyStyles.paragraphText }>
                 Imbued with the majesty of the Hubara bird and its awe-inspiring
                 desert home, Hubara Design presents a casual collection
                 embodying timeless style, comfort, and our commitment to mindful

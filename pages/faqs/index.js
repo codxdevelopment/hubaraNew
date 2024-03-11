@@ -20,8 +20,8 @@ const Index = () => {
         </Breadcrumbs>
       </div>
 
-      <div class={`flex items-center justify-center ${faqStyles.faqDiv}`}>
-        <div class="text-center">
+      <div className={`flex items-center justify-center ${faqStyles.faqDiv}`}>
+        <div className="text-center">
           <div className={faqStyles.frequently}>Frequently</div>
           <div className={faqStyles.askedQuestion}>Asked Questions</div>
         </div>

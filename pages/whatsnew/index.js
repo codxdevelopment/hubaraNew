@@ -23,9 +23,9 @@ const Index = () => {
         Our new Arrivals
       </div>
       <Spacer y={20} />
-      <div class={`container mx-auto px-4 ${storyStyles.parent}`}>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="bg-white">
+      <div className={`container mx-auto px-4 ${storyStyles.parent}`}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white">
             <div className={storyStyles.title}>EFFORTLESS STYLE</div>
             <Spacer y={5} />
             <div className={storyStyles.paragraphText}>
@@ -34,8 +34,8 @@ const Index = () => {
               desert.
             </div>
           </div>
-          <div class="bg-white"></div>
-          <div class="bg-white">
+          <div className="bg-white"></div>
+          <div className="bg-white">
             <div className={storyStyles.title}>MINDFUL DESIGN</div>
             <Spacer y={5} />
             <div className={storyStyles.paragraphText}>
@@ -46,8 +46,8 @@ const Index = () => {
           </div>
         </div>
         <Spacer y={20} />
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-white">
             <Image
               src={man1.src}
               height={700}
@@ -55,7 +55,7 @@ const Index = () => {
               layout="responsive"
             />
           </div>
-          <div class="bg-white">
+          <div className="bg-white">
             <Image
               src={man2.src}
               height={700}
@@ -65,7 +65,7 @@ const Index = () => {
           </div>
         </div>
         <Spacer y={20} />
-        <div class="flex justify-center items-center text-center">
+        <div className="flex justify-center items-center text-center">
           <div className={indexStyles.collection}>
             OUR NEW COLLECTION
             <br />
@@ -73,8 +73,8 @@ const Index = () => {
           </div>
         </div>
         <Spacer y={20} />
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <div class="bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="bg-white">
             <Image
               src={man3.src}
               height={700}
@@ -82,7 +82,7 @@ const Index = () => {
               layout="responsive"
             />
           </div>
-          <div class="bg-white">
+          <div className="bg-white">
             <Image
               src={man4.src}
               height={700}
@@ -93,7 +93,7 @@ const Index = () => {
         </div>
 
         <div
-          class={`flex justify-center items-center text-center ${indexStyles.paragraph}`}
+          className={`flex justify-center items-center text-center ${indexStyles.paragraph}`}
         >
           Our Hubara Essential Sweat Collection has been made in Dubai from
           French Terry
@@ -106,8 +106,8 @@ const Index = () => {
           cooler months.
         </div>
         <Spacer y={3} />
-        <div class="grid grid-cols-1 md:grid-cols-2">
-          <div class="bg-white">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="bg-white">
             <Image
               src={man5.src}
               height={700}
@@ -115,7 +115,7 @@ const Index = () => {
               layout="responsive"
             />
           </div>
-          <div class="bg-white">
+          <div className="bg-white">
             <Image
               src={man6.src}
               height={700}
@@ -125,7 +125,7 @@ const Index = () => {
           </div>
         </div>
         <div
-          class={`flex justify-center items-center text-center ${indexStyles.paragraph}`}
+          className={`flex justify-center items-center text-center ${indexStyles.paragraph}`}
         >
           The Essential French Terry Collection comes in hoodies, cargopants and
           shorts,
@@ -138,8 +138,8 @@ const Index = () => {
           the evening, and comfortable to wear even in the summer.
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div class="bg-red">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="bg-red">
             <Image
               src={man7.src}
               height={340}
@@ -147,8 +147,8 @@ const Index = () => {
               style={{ objectFit: "cover" }}
             />
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div class="bg-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="bg-white">
               <Image
                 src={man8.src}
                 height={320}
@@ -158,7 +158,7 @@ const Index = () => {
               />
               <Spacer y={3} />
             </div>
-            <div class="bg-white">
+            <div className="bg-white">
               <Image
                 src={man9.src}
                 height={340}

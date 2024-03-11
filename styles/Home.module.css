@@ -86,7 +86,7 @@
 .logo {
   height: 1em;
 }
-.rootContainer{
+.headerContainer{
   padding-left: 16px !important;
   padding-right: 16px !important;
 }
@@ -101,6 +101,11 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 760px) {
+  .headerContainer{
+    margin-bottom:48px !important;
+  }
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;
