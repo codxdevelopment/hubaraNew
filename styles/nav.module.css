@@ -12,3 +12,28 @@
 .regularFont:hover {
   color: var(--primary-color);
 }
+.sticky-content.fixed {
+  background: #fff;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  right: 0;
+  z-index: 1051;
+}
+.sticky-content.fix-top {
+  top: 0;
+}
+.sticky-header {
+  transition: margin .4s;
+}
+
+@keyframes fixedTop{
+  0% {
+    transform: translateY(-100%);
+    transform-origin: center top 0;
+}
+100% {
+  transform: translateY(0);
+}
+}

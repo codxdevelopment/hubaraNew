@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <>
       <Spacer y={3} />
-      <AboutBanner />
+      <AboutBanner /> 
       <Spacer y={20} />
       <Luxury />
       <Spacer y={20} />
