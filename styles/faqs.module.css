@@ -66,3 +66,11 @@
   line-height: 20px;
   font-size: 14px;
 }
+
+.contactHeading {
+  font-family: "regular";
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: white;
+}
