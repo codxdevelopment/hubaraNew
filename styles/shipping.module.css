@@ -1,0 +1,48 @@
+.imageContainer {
+  margin-top: 20px;
+  height: 440px;
+  width: 100%;
+  background-image: url("../public/shipping-policy-banner.jpg");
+  background-position: 10% 20%;
+  color: white;
+  font-family: "regular";
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  font-size: 50px;
+  font-weight: 400 !important;
+  line-height: 1.2;
+}
+
+.textContainer {
+  margin-top: 90px;
+  margin-left: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .textContainer {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .textQuestion {
+    font-size: 24px;
+  }
+}
+
+.textQuestion {
+  font-size: 20px;
+  font-family: "regular";
+  color: var(--textBlackColor);
+  margin-bottom: 20px;
+}
+
+.answer {
+  font-family: "regular";
+  color: var(--textGrayColor);
+  font-size: 12px;
+  line-height: 1.86;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
