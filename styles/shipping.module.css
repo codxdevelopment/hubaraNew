@@ -15,7 +15,7 @@
 }
 
 .textContainer {
-  margin-top: 100px;
+  margin-top: 90px;
   margin-left: 120px;
 }
 
@@ -40,7 +40,7 @@
 
 .answer {
   font-family: "regular";
-  color: var(--textLightGrayColor);
+  color: var(--textGrayColor);
   font-size: 12px;
   line-height: 1.86;
   font-weight: 400;
