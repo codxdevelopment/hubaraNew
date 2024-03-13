@@ -27,7 +27,27 @@
 .sticky-header {
   transition: margin .4s;
 }
-
+.bottomNav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  min-height: 60px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.bottomLink{
+  font-family: "regular", sans-serif;
+  font-size: 10pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @keyframes fixedTop{
   0% {
     transform: translateY(-100%);

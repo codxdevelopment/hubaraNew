@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .title a {
@@ -90,6 +91,9 @@
   padding-left: 16px !important;
   padding-right: 16px !important;
 }
+.headerContainer .fixed{
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+}
 .menuToolbar{
   min-height: 52px !important;
 }
@@ -167,7 +171,7 @@
     max-width: 100%;
   }
   .headerContainer{
-    margin-bottom:48px !important;
+    margin-bottom:28px !important;
   }
   .container {  
     padding: 0 !important;

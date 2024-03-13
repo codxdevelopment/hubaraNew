@@ -47,3 +47,28 @@ img {
   font-style: normal;
   font-display: swap;
 }
+.fixedTop.fixed{
+  padding-left: 5.6rem;
+  padding-right: 5.6rem;
+  animation: fixedTop;
+}
+.scrollTop:hover{
+  background-color: #fff !important;
+}
+.hidden{
+  display: none !important;
+}
+@media(max-width: 768px){
+  .scrollTop{
+    display: none !important;
+  }
+}
+@keyframes fixedTop{
+  0% {
+    transform: translateY(-100%);
+    transform-origin: center top 0;
+}
+100% {
+  transform: translateY(0);
+}
+}

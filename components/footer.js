@@ -181,6 +181,7 @@ export default function Footer({ Component, pageProps }) {
               <div className="col-span-12">
                 <span className={footerStyles.consentText}>By entering email address, you agree to our Privacy Policy and you may unsubscribe at any time.</span></div>
             </div>
+            <Spacer y={10} className="block md:hidden" />
           </div>
         </div>
       </div>

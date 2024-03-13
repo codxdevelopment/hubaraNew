@@ -12,6 +12,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import List from "@mui/material/List";
 import Drawer from "@mui/material/Drawer";
 import ListItem from "@mui/material/ListItem";
@@ -19,11 +20,28 @@ import ListItemText from "@mui/material/ListItemText";
 import navStyles from "../styles/nav.module.css";
 import Badge from '@mui/material/Badge';
 import EastIcon from '@mui/icons-material/East';
+import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
 const name = "Hubara";
 export const siteTitle = "Hubara | Luxury Clothing Brand Dubai | UAE";
 export default function Navbar({ home }) {
+  const [isSticky, setisSticky] = React.useState(false);
   const [open, setOpen] = React.useState(false);
   const [cartOpen, setcartOpen] = React.useState(false);
+  // Sticky Menu functionality
+  React.useEffect(() => {
+    const toggleVisibility = () => {
+      // if the user scrolls down, show the button
+      window.scrollY > 150 ? setisSticky(true) : setisSticky(false)
+    }
+    // listen for scroll events
+    window.addEventListener("scroll", toggleVisibility)
+
+    // clear the listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility)
+    }
+  }, [])
+
   // Drawer to open menu on small screens
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -40,7 +58,7 @@ export default function Navbar({ home }) {
     },
     {
       title: "What's New",
-      link: '/whats-new'
+      link: '/whatsnew'
     },
     {
       title: 'Men',
@@ -65,7 +83,7 @@ export default function Navbar({ home }) {
   ));
   return (
     <>
-      <Container maxWidth="lg" className={utilStyles.headerContainer}>
+      <Container maxWidth="lg" className={`relative ${utilStyles.headerContainer}`}>
         <Box sx={{ flexGrow: 1 }}>
           {home ? (
             <Box sx={{ flexGrow: 1 }}>
@@ -93,7 +111,9 @@ export default function Navbar({ home }) {
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                className="py-2"
+                className={`fixedTop py-2 ${
+                  isSticky ? "fixed w-full left-0 z-10 bg-white shadow-md" : "relative"
+                }`}
               >
                 <Grid xs={3}>
                   <Link href="/">
@@ -207,7 +227,14 @@ export default function Navbar({ home }) {
                       onClick={toggleDrawer(true)}
                       color="inherit"
                     >
-                      <MenuIcon />
+                      {/* <MenuOpenIcon fontSize="large" color="#222" /> */}
+                      <Image
+                        priority
+                        src="/images/icons/menu.svg"
+                        height={32}
+                        width={32}
+                        alt={name}
+                      />
                     </IconButton>
                     {/* Menu Drawer for small screens  */}
                     <Drawer open={open} onClose={toggleDrawer(false)}>
@@ -230,27 +257,37 @@ export default function Navbar({ home }) {
                     <Image
                       priority
                       src="/images/bird-logo.png"
-                      height={77}
-                      width={70}
+                      height={66}
+                      width={60}
                       alt={name}
                     />
                     <Image
                       priority
                       src="/images/text-logo.png"
-                      height={68}
-                      width={390}
+                      height={28}
+                      width={128}
                       alt={name}
                     />
                   </Link>
                 </Grid>
                 <Grid xs={3} gap={1} className="flex justify-center">
-                  <Image
-                    priority
-                    src="/images/icons/cart4.svg"
-                    height={32}
-                    width={42}
-                    alt={name}
-                  />
+                <Badge badgeContent={1} 
+                    sx={{
+                      "& .MuiBadge-badge": {
+                        color: "white",
+                        backgroundColor: "#9a8254"
+                      }
+                    }}
+                    onClick={toggleCartDrawer(true)}
+                  >
+                    <Image
+                      priority
+                      src="/images/icons/cart4.svg"
+                      height={32}
+                      width={42}
+                      alt={name}
+                    />
+                  </Badge>
                   <Image
                     priority
                     src="/images/icons/user2.svg"
@@ -259,7 +296,7 @@ export default function Navbar({ home }) {
                     alt={name}
                   />
                 </Grid>
-              </Grid>
+              </Grid> 
             </Box>
           )}
         </Box>
@@ -294,6 +331,50 @@ export default function Navbar({ home }) {
           </Container>
         </AppBar>
       </Box>
+      <Grid
+        container
+        sx={{
+          display: { xs: "flex", md: "none" },
+        }}
+        className={` ${
+          isSticky ? "flex" : "hidden"
+        } ${navStyles.bottomNav}`}
+      >
+        <Link className={navStyles.bottomLink} href="/" >
+          <Image
+            priority
+            src="/images/icons/home.svg"
+            height={26}
+            width={26}
+            alt={name}
+          />
+          Home
+        </Link>
+        <Link className={navStyles.bottomLink} href="/" >
+          <TuneOutlinedIcon sx={{color: '#666', transform: 'rotate(90deg)'}}/>
+          Categories
+        </Link>
+        <Link className={navStyles.bottomLink} href="/" >
+          <Image
+            priority
+            src="/images/icons/heart.svg"
+            height={26}
+            width={26}
+            alt={name}
+          />
+          Wishlist
+        </Link>
+        <Link className={navStyles.bottomLink} href="/" >
+          <Image
+            priority
+            src="/images/icons/user2.svg"
+            height={26}
+            width={26}
+            alt={name}
+          />
+          Account
+        </Link>
+      </Grid>
     </>
   );
 }
