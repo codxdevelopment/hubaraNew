@@ -1,0 +1,83 @@
+.loginParent {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.breadcrumbsDiv {
+  color: var(--textLightGrayColor);
+  font-family: "regular";
+  height: 53px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  max-width: 490px;
+  height: 350px;
+  margin: auto;
+  padding-top: 20px;
+  box-sizing: border-box; /* Include padding in width/height */
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.loginTitle {
+  font-family: "bold";
+  color: var(--textBlackColor);
+  padding: 0 0 1px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.subscribeInput {
+  border: 1px solid #e3e3e3;
+  color: var(--textLightGrayColor);
+  border-radius: 3px !important;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.subscribeInput input::placeholder {
+  color: var(--textLightGrayColor) !important;
+}
+
+.allDetails {
+  font-family: "regular", "sans-serif";
+  font-size: 12pt;
+}
+
+.checkmark {
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  border-radius: 2px;
+  border: 1px solid #ccc; /* Border style */
+}
+
+.loginBtn {
+  height: 45px;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "regular";
+  width: 100%;
+  border-radius: 4px;
+  font-size: 12px;
+}
