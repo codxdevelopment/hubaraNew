@@ -336,9 +336,9 @@ export default function Navbar({ home }) {
         sx={{
           display: { xs: "flex", md: "none" },
         }}
-        className={` ${
-          isSticky ? "flex" : "hidden"
-        } ${navStyles.bottomNav}`}
+        className={` ${navStyles.bottomNav} ${
+          isSticky ? "flex" : "hiddenHb" 
+        }`}
       >
         <Link className={navStyles.bottomLink} href="/" >
           <Image

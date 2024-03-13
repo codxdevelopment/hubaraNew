@@ -28,7 +28,6 @@
   transition: margin .4s;
 }
 .bottomNav{
-  display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;

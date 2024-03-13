@@ -55,7 +55,7 @@ img {
 .scrollTop:hover{
   background-color: #fff !important;
 }
-.hidden{
+.hiddenHb{
   display: none !important;
 }
 @media(max-width: 768px){
