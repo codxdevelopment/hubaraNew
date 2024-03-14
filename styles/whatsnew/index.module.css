@@ -5,6 +5,22 @@
   padding-right: 125px;
   animation: fadeIn 1s ease-in-out forwards;
 }
+.title {
+  color: var(--textBlackColor);
+  font-size: 30px;
+  font-family: "regular";
+  font-weight: 400;
+  line-height: 1.4;
+}
+.paragraphText {
+  font-size: 16px;
+  font-family: "regular";
+  line-height: 24px;
+  text-align: justify;
+  font-weight: 400;
+  color: var(--textGrayColor);
+}
+
 
 @media only screen and (max-width: 600px) {
   .parent {
@@ -38,9 +54,10 @@
 
 .collection {
   font-family: "regular";
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 300;
   letter-spacing: 12px;
+  text-transform: uppercase;
   color: var(--textBlackColor);
 }
 

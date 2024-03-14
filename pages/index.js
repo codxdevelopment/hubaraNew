@@ -13,7 +13,7 @@ export default function Home() {
         <title>Hubara</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Spacer y={5} className="hidden md:block"/>
+      <Spacer y={5} className="hidden  lg`:block"/>
       {/* Large Screens Video */}
       <div className={`hidden md:block ${utilStyles.homeVideo}`} >
         <video
@@ -43,7 +43,7 @@ export default function Home() {
           </video>
       </div>
       <div className={utilStyles.paragraphBox}>
-        <h1 className={`py-5 px-6 md:px-0 ${utilStyles.paragraphText}`}>
+        <h1 className={`py-5 px-6 md:px-2 ${utilStyles.paragraphText}`}>
               A casual aesthetic that flies under the radar, featuring the finest natural materials and combining clean, minimalist lines with future-proof fabric innovation. Hubara is defined as timeless clothing of the highest quality—sophisticated and understated, with craftsmanship, the provenance of fabrics, and sheer comfort at its heart.
         </h1>
       </div>

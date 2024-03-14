@@ -16,19 +16,19 @@ import man9 from "../../public/images/whatsNewImages/whatsnew-man9.png";
 const Index = () => {
   return (
     <>
-      <Spacer y={3} />
+      <Spacer y={5} className="hidden md:block" />
       <div
-        className={`flex justify-center items-center h-screen ${indexStyles.bannerBg}`}
+        className={`flex justify-center items-center h-screen px-4 text-center md:px-0 ${indexStyles.bannerBg}`}
       >
-        Our new Arrivals
+        Our New Arrivals
       </div>
       <Spacer y={20} />
       <div className={`container mx-auto px-4 ${storyStyles.parent}`}>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-5 md:px-0">
           <div className="bg-white">
-            <div className={storyStyles.title}>EFFORTLESS STYLE</div>
-            <Spacer y={5} />
-            <div className={storyStyles.paragraphText}>
+            <div className={`font-normal ${indexStyles.title}`}>EFFORTLESS STYLE</div>
+            <Spacer y={1} />
+            <div className={`font-normal ${indexStyles.paragraphText}`}>
               Step into a world of understated casual luxury that flies under
               the radar and pays homage to the rich landscape of the Arabian
               desert.
@@ -36,16 +36,16 @@ const Index = () => {
           </div>
           <div className="bg-white"></div>
           <div className="bg-white">
-            <div className={storyStyles.title}>MINDFUL DESIGN</div>
-            <Spacer y={5} />
-            <div className={storyStyles.paragraphText}>
+            <div className={indexStyles.title}>MINDFUL DESIGN</div>
+            <Spacer y={1} />
+            <div className={indexStyles.paragraphText}>
               Our classic French Terry collection is a symphony of comfort and
               quality, where each thread weaves a tale of relaxed quiet
               expression.
             </div>
           </div>
         </div>
-        <Spacer y={20} />
+        <Spacer y={5} />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-white">
             <Image
@@ -64,7 +64,7 @@ const Index = () => {
             />
           </div>
         </div>
-        <Spacer y={20} />
+        <Spacer y={8} />
         <div className="flex justify-center items-center text-center">
           <div className={indexStyles.collection}>
             OUR NEW COLLECTION
@@ -72,7 +72,7 @@ const Index = () => {
             HAS SPREADS ITS WINGS{" "}
           </div>
         </div>
-        <Spacer y={20} />
+        <Spacer y={8} />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <div className="bg-white">
             <Image
@@ -93,13 +93,23 @@ const Index = () => {
         </div>
 
         <div
-          className={`flex justify-center items-center text-center ${indexStyles.paragraph}`}
+          className={`flex justify-center items-center text-center hidden md:block ${indexStyles.paragraph}`}
         >
           Our Hubara Essential Sweat Collection has been made in Dubai from
           French Terry
           <br />
           cotton and has been garment-dyed for a soft handle.
           <br />
+          Our French Terry material is 100% cotton, and has a smooth exterior,
+          and a soft loop interior. The collection is designed for a relaxed
+          casual look for lounging at home, or out in the desert during the
+          cooler months.
+        </div>
+        <div
+          className={`flex justify-center items-center text-center block md:hidden ${indexStyles.paragraph}`}
+        >
+          Our Hubara Essential Sweat Collection has been made in Dubai from
+          French Terry cotton and has been garment-dyed for a soft handle.
           Our French Terry material is 100% cotton, and has a smooth exterior,
           and a soft loop interior. The collection is designed for a relaxed
           casual look for lounging at home, or out in the desert during the
@@ -144,7 +154,7 @@ const Index = () => {
               src={man7.src}
               height={340}
               width={700}
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", minHeight: '340px' }}
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -156,7 +166,6 @@ const Index = () => {
                 style={{ objectFit: "cover" }}
                 layout="responsive"
               />
-              <Spacer y={3} />
             </div>
             <div className="bg-white">
               <Image
@@ -166,8 +175,8 @@ const Index = () => {
                 style={{ objectFit: "cover" }}
                 layout="responsive"
               />
-              <Spacer y={3} />
             </div>
+            <Spacer y={10} />
           </div>
         </div>
       </div>

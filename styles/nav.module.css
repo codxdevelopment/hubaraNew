@@ -38,6 +38,7 @@
   left: 0;
   bottom: 0;
   z-index: 99;
+  animation: fixedBottom;
 }
 .bottomLink{
   font-family: "regular", sans-serif;
@@ -51,6 +52,15 @@
   0% {
     transform: translateY(-100%);
     transform-origin: center top 0;
+}
+100% {
+  transform: translateY(0);
+}
+}
+@keyframes fixedBottom{
+  0% {
+    transform: translateY(100%);
+    transform-origin: center bottom 0;
 }
 100% {
   transform: translateY(0);
