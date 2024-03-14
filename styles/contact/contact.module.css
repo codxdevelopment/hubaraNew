@@ -1,0 +1,53 @@
+.infoBox{
+    background: #eeeeee !important;
+    min-height: 300px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+.infoBoxInner{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: background .3s
+}
+.infoBoxContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-out;
+}
+.infoBoxContent h1{
+    font-family: "regular";
+    font-size: 20px;
+    color: #fff;
+}
+.infoBoxContent a{
+    font-family: "regular";
+    font-size: 13px;
+}
+.infoBoxContent p{
+    font-family: "regular";
+    font-size: 13px;
+}
+.hiddenContent{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: display .3s;
+}
+.infoBox:hover .infoBoxContent{
+    transform: translateY(-8%);
+}
+.infoBox:hover .infoBoxInner{
+    background: #9a8254e6;
+}
+.infoBox:hover .hiddenContent{
+    display: flex;
+}
