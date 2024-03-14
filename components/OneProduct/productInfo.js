@@ -81,7 +81,7 @@ const ProductInfo = () => {
       <div className={infoStyles.productName}>Signature Hubara Vest</div>
       <div className={infoStyles.productPrice}>AED 3,900.00</div>
       <div className={infoStyles.productColorLabel}>Color: Khaki</div>
-      <div className="mb-20">{productSideImages()}</div>
+      <div className="mb-10">{productSideImages()}</div>
       <div className="mb-5 flex justify-between">
         <div className={`${infoStyles.productColorLabel} flex-grow`}>
           Size: {selectedSizeName}
