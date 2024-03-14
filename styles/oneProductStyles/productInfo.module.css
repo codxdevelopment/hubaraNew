@@ -1,0 +1,148 @@
+.productName {
+  font-family: "bold";
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--textBlackColor);
+}
+
+.productPrice {
+  font-family: "regular";
+  color: black;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.productInfoParent {
+  padding: 0px;
+}
+
+.productColorLabel {
+  font-family: "regular";
+  color: var(--textBlackColor);
+  font-size: 15px;
+}
+
+.sizeGuide {
+  font-family: "regular";
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.prodcuctSizeUnSelected {
+  height: 44px;
+  width: 105px;
+  display: flex;
+  background-color: white;
+  color: black;
+  font-family: "regular";
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.prodcuctSizeSelected {
+  height: 44px;
+  width: 105px;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: "regular";
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.addToShopping {
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 300;
+  background: linear-gradient(
+    180deg,
+    #9a8254,
+    rgba(154, 130, 84, 0.42)
+  ) !important;
+  border: none !important;
+  height: 55px;
+  font-family: "regular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.addToWishList {
+  border-radius: 5px;
+  width: 100%;
+  font-weight: 300;
+  height: 55px;
+  font-family: "regular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.hubaraNotes {
+  font-family: "bold";
+  font-size: 15px;
+  color: var(--textBlackColor);
+  text-transform: uppercase;
+}
+
+.notesText {
+  line-height: 1.86;
+  font-size: 14px;
+  font-family: "regular";
+  text-transform: capitalize;
+}
+
+.accordianHr {
+  background-color: var(--primary-color); /* Red background color */
+  height: 1px; /* Height of the hr */
+  border: none; /* Remove default hr border */
+}
+
+/* Media query for mobile devices (767px and below) */
+@media (max-width: 767px) {
+  .productInfoParent {
+    padding: 15px;
+  }
+
+  .prodcuctSizeSelected {
+    height: 44px;
+    width: 80px;
+  }
+
+  .prodcuctSizeUnSelected {
+    height: 44px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .productInfoParent {
+    padding: 15px;
+  }
+
+  .prodcuctSizeSelected {
+    height: 44px;
+    width: 80px;
+  }
+
+  .prodcuctSizeUnSelected {
+    height: 44px;
+    width: 80px;
+  }
+}

@@ -4,7 +4,6 @@ import { Breadcrumbs, BreadcrumbItem, Link } from "@nextui-org/react";
 import productStyles from "../../styles/oneProduct.module.css";
 import HomeIcon from "@mui/icons-material/Home";
 import Image from "next/image";
-import { Card, CardMedia, Grid } from "@mui/material";
 import ProductInfo from "../../components/OneProduct/productInfo";
 
 const OneProduct = () => {
