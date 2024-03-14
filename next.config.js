@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["hubara.com"],
+    domains: ["hubara.com", "s3.ap-south-1.amazonaws.com"],
   },
 };

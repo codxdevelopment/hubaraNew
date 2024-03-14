@@ -11,6 +11,7 @@
   font-size: 16px;
   align-items: center;
   color: var(--textLightGrayColor);
+  height: 50px;
 }
 
 .productBreadcrumb {
@@ -20,6 +21,24 @@
   font-size: 16px;
   align-items: center;
   color: var(--textGrayColor);
+}
+
+.productContainer {
+  margin-top: 20px;
+}
+
+.sideImagesContainer {
+  max-height: 567px;
+  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.sideImage {
+  height: 79px !important;
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid black;
 }
 
 /* Media query for tablets (768px) */
@@ -45,5 +64,12 @@
     margin-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .sideImagesContainer {
+    height: 110px;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
   }
 }
