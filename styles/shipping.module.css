@@ -36,6 +36,7 @@
   font-family: "regular";
   color: var(--textBlackColor);
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .answer {

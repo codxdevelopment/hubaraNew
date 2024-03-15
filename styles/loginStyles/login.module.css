@@ -12,7 +12,7 @@
 
 .card {
   max-width: 490px;
-  height: 350px;
+  height: fit-content;
   margin: auto;
   padding-top: 20px;
   box-sizing: border-box; /* Include padding in width/height */
@@ -57,6 +57,7 @@
 
 .subscribeInput input::placeholder {
   color: var(--textLightGrayColor) !important;
+  font-size: 14px;
 }
 
 .allDetails {
@@ -74,10 +75,14 @@
 
 .loginBtn {
   height: 45px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   color: white;
-  font-family: "regular";
+  font-family: "regular" !important;
   width: 100%;
   border-radius: 4px;
+  font-size: 12px !important;
+}
+.bottomLinks a, .bottomLinks label span{
+  font-family: "regular";
   font-size: 12px;
 }
