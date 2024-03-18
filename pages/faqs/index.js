@@ -1,7 +1,7 @@
 import React from "react";
-import { Breadcrumbs, BreadcrumbItem, Spacer } from "@nextui-org/react";
 import faqStyles from "../../styles/faqs.module.css";
 import Link from "next/link";
+import { Breadcrumbs, BreadcrumbItem, Spacer } from "@nextui-org/react";
 import HomeIcon from "@mui/icons-material/Home";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 

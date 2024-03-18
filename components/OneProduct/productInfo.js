@@ -3,9 +3,6 @@ import infoStyles from "../../styles/oneProductStyles/productInfo.module.css";
 import Image from "next/image";
 import { Accordion, AccordionItem, Spacer } from "@nextui-org/react";
 const ProductInfo = () => {
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
   const [sizeIndex, selectSizeIndex] = useState(0);
   const [selectedSizeName, setSelectedSizeName] = useState("Small");
 
