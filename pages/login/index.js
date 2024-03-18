@@ -6,9 +6,19 @@ import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Link from "next/link";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
+import {  IconButton } from "@mui/material";
 
 const Index = () => {
+const [showPassword, setShowPassword] = useState(false);
+const [showPasswordIcon, setShowPasswordIcon] = useState(false);
+
+const handlePassword = (e) =>{
+  console.log(showPasswordIcon);
+  e.target.value  ? setShowPasswordIcon(true) : setShowPasswordIcon(false);
+}
   return (
     <div>
       <div
@@ -39,14 +49,19 @@ const Index = () => {
             </div>
 
             <div
-              className={`w-full h-75 border border-black rounded-sm p-1 ${loginStyles.subscribeInput}`}
+              className={`w-full flex relative h-75 border border-black rounded-sm p-1 ${loginStyles.subscribeInput}`}
             >
               <input
                 required
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="Password *"
                 className={`w-full px-4 py-2 rounded-sm focus:outline-none ${loginStyles.allDetails}`}
+                onChange={(e) => handlePassword(e)}
               />
+              <IconButton onClick={() => { setShowPassword(!showPassword) }} sx={{ position: 'absolute', right: 4, top: 4 }} className={showPasswordIcon ? "flex" : "hiddenHb" }
+              >
+                {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
+              </IconButton>
             </div>
             <div className={`flex pb-2 justify-between items-center ${loginStyles.bottomLinks}`}>
               <FormGroup>
