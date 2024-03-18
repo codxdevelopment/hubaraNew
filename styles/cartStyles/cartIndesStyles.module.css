@@ -1,0 +1,10 @@
+.titleText {
+  font-family: "regular";
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--textBlackColor);
+}
+
+.enactiveLink {
+}
