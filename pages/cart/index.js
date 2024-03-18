@@ -1,6 +1,7 @@
 import React from "react";
 import { Breadcrumbs, BreadcrumbItem, Spacer } from "@nextui-org/react";
 import HomeIcon from "@mui/icons-material/Home";
+import Link from "next/link";
 import faqStyles from "../../styles/faqs.module.css";
 
 const Index = () => {
