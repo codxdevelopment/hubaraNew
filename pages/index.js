@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>Hubara</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> 
       <Spacer y={5} className="hidden  lg:block"/>
       {/* Large Screens Video */}
       <div className={`hidden md:block ${utilStyles.homeVideo}`} >

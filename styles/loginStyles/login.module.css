@@ -80,7 +80,8 @@
   font-family: "regular" !important;
   width: 100%;
   border-radius: 4px;
-  font-size: 12px !important;
+  font-size: 13px !important;
+  cursor: pointer;
 }
 .bottomLinks a, .bottomLinks label span{
   font-family: "regular";
