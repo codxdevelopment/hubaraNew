@@ -1,11 +1,25 @@
 .titleText {
   font-family: "regular";
   height: 50px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   color: var(--textBlackColor);
 }
 
 .enactiveLink {
-  color: ;
+  color: var(--textLightGrayColor);
+  transition: color 0.2s ease;
+}
+.activeLink {
+  color: var(--primary-color);
+}
+
+.enactiveLink:hover {
+  color: var(--textBlackColor);
+}
+
+.itemParentDiv {
+  border: 1px solid var(--primary-color);
+  width: 100%;
 }
