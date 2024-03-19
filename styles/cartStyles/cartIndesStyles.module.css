@@ -23,3 +23,93 @@
   border: 1px solid var(--primary-color);
   width: 100%;
 }
+.itemName {
+  color: (--textBlackColor);
+  font-family: "regular";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.colorAndSize {
+  color: (--textBlackColor);
+  font-family: "regular";
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qunatityCounterParent {
+  height: 45px;
+  width: 130px;
+  margin-left: 10px;
+}
+.decreaseBtn {
+  border: 1px solid #dcdcdc;
+  height: 45px;
+  width: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "regular";
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--textGrayColor);
+  cursor: pointer;
+}
+.quantityDiv {
+  height: 45px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "regular";
+  color: var(--textGrayColor);
+  border-left: none; /* No border on the left side */
+  border-right: none; /* No border on the right side */
+  border-top: 1px solid #dcdcdc; /* Border only on the top */
+  border-bottom: 1px solid #dcdcdc; /* Border only on the bottom */
+}
+
+.priceDiv {
+  font-family: "regular";
+  font-size: 20px;
+}
+.deleteBtn {
+  cursor: pointer;
+}
+.summaryTex {
+  font-family: "regular";
+  font-size: 18px;
+  color: var(--textBlackColor);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.summaryParent {
+  height: 168px;
+  padding: 40px 20px;
+  border: 1px solid var(--primary-color);
+}
+.summaryItems {
+  font-family: "regular";
+  size: 16px;
+  margin-bottom: 10px;
+}
+
+.proceedBtn {
+  background: linear-gradient(
+    180deg,
+    #9a8254,
+    rgba(154, 130, 84, 0.42)
+  ) !important;
+  height: 56px;
+  margin-top: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: "regular";
+  font-size: 14px;
+  font-weight: 400;
+}
