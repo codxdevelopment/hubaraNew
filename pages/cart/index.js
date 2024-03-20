@@ -62,11 +62,11 @@ const Index = () => {
       const carDiv = (
         <div key={index}>
           <div
-            className={`  overflow-hidden shadow-lg mb-5 ${indexStyles.itemParentDiv}`}
+            className={`overflow-hidden shadow-lg mb-5 ${indexStyles.itemParentDiv}`}
           >
             <div className="flex justify-between">
-              <div className="p-5 w-3/5 mx-auto">
-                <div className="relative">
+              <div className="p-2 w-3/5 mx-auto">
+                <div className={indexStyles.imageContainer}>
                   <Image
                     src={item.itemImage}
                     alt={item.title}
@@ -76,7 +76,7 @@ const Index = () => {
                   />
                 </div>
               </div>
-              <div className="w-full p-4">
+              <div className="w-full ">
                 <div className={indexStyles.itemName}> {item.itemName}</div>
                 <div className={indexStyles.colorAndSize}>
                   Color: {item.color}
@@ -101,7 +101,7 @@ const Index = () => {
                 </div>
               </div>
               <div
-                className={`p-4 w-3/5 ${indexStyles.priceDiv} flex items-center justify-center`}
+                className={`w-3/5 ${indexStyles.priceDiv} flex items-center justify-center`}
               >
                 AED : {item.price}
               </div>
@@ -134,7 +134,7 @@ const Index = () => {
         <div className="col-span-12 md:col-span-8 p-4">
           <div>{setCartItems()}</div>
         </div>
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-4 p-4">
           <div className={indexStyles.summaryTex}>Summary</div>
           <div
             className={`${indexStyles.summaryParent} w-full overflow-hidden shadow-lg`}

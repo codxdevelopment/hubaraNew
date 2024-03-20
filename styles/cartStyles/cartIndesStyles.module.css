@@ -22,12 +22,13 @@
 .itemParentDiv {
   border: 1px solid var(--primary-color);
   width: 100%;
+  padding: 10px;
 }
 .itemName {
   color: (--textBlackColor);
   font-family: "regular";
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .colorAndSize {
@@ -38,13 +39,12 @@
 }
 
 .qunatityCounterParent {
-  height: 45px;
-  width: 130px;
+  height: 35px;
   margin-left: 10px;
 }
 .decreaseBtn {
   border: 1px solid #dcdcdc;
-  height: 45px;
+  height: 35px;
   width: 31px;
   display: flex;
   justify-content: center;
@@ -56,8 +56,8 @@
   cursor: pointer;
 }
 .quantityDiv {
-  height: 45px;
-  width: 70px;
+  height: 35px;
+  width: 41px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@
   font-family: "regular";
   font-size: 18px;
   color: var(--textBlackColor);
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .summaryParent {
@@ -112,4 +112,26 @@
   font-family: "regular";
   font-size: 14px;
   font-weight: 400;
+}
+
+.imageContainer{
+  width: 90px; /* Initial width for the image */
+  height: 120px; /* Initial height for the image */
+}
+
+@media only screen and (max-width: 767px) {
+  .imageContainer {
+    max-width: 60px; /* Image container takes full width of its parent */
+    height: 80px; /* Allow image height to adjust based on width */
+  }
+  .itemName{
+    font-size: 16px;
+  }
+  .colorAndSize{
+    font-size: 12px;
+  }
+  .priceDiv{
+    font-size: 15px;
+    margin-right: 10px;
+  }
 }
