@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Grid from "@mui/material/Unstable_Grid2";
 import Modal from '@mui/material/Modal';
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
@@ -25,7 +24,12 @@ const style = {
   bgcolor: 'background.paper',
   boxShadow: 24,
   p: 4,
-  borderRadius: '10px'
+  borderRadius: '10px',
+    '@media(max-width: 768px)' : {
+        width: 400,
+        maxHeight: '440px',
+        overflowY: 'scroll'
+    }
 };
 
 export const tableSx = {
@@ -65,6 +69,14 @@ export default function ReceiptPopup(props) {
             <IconButton sx={{ position: 'absolute', right: 4, top: 4 }} onClick={props.closePopup}>
                 <CloseIcon />
             </IconButton>
+            {/* <Grid
+            container
+            spacing={2}
+            direction="row"
+            className="py-2 w-full"
+            >
+                <Grid xs={12}></Grid>
+            </Grid> */}
             <Stack
             direction="row"
             justifyContent="center"

@@ -193,13 +193,15 @@ export default function Navbar({ home }) {
                       </Grid>
                       <Divider variant="middle"/>
                     </Drawer>
-                  <Image
-                    priority
-                    src="/images/icons/user2.svg"
-                    height={32}
-                    width={32}
-                    alt={name}
-                  />
+                    <Link className={navStyles.bottomLink} href="/account" >
+                      <Image
+                        priority
+                        src="/images/icons/user2.svg"
+                        height={32}
+                        width={32}
+                        alt={name}
+                      />
+                    </Link>
                 </Grid>
               </Grid>
               {/* Header for screens belowe 900px */}
@@ -288,6 +290,7 @@ export default function Navbar({ home }) {
                       alt={name}
                     />
                   </Badge>
+                  <Link className={navStyles.bottomLink} href="/account" >
                   <Image
                     priority
                     src="/images/icons/user2.svg"
@@ -295,6 +298,7 @@ export default function Navbar({ home }) {
                     width={32}
                     alt={name}
                   />
+                  </Link>
                 </Grid>
               </Grid> 
             </Box>
@@ -364,7 +368,7 @@ export default function Navbar({ home }) {
           />
           Wishlist
         </Link>
-        <Link className={navStyles.bottomLink} href="/" >
+        <Link className={navStyles.bottomLink} href="/account" >
           <Image
             priority
             src="/images/icons/user2.svg"

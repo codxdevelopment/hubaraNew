@@ -30,13 +30,29 @@ export const tableSx = {
         backgroundColor: '#f4f4f4',
       },
   };
-  
 const OrdersData = () => {
     const [openReceiptModal, setopenReceiptModal] = React.useState(false);
 
     const closePopup = ()=>{
         setopenReceiptModal(!openReceiptModal);
     }
+
+    const orders = [
+        {
+            id : 'HB-01059-AE',
+            date: '03/01/2024',
+            status: 'Paid',
+            total: '400',
+            actions: 'View'
+        },
+        {
+            id : 'HB-01060-AE',
+            date: '03/02/2024',
+            status: 'Paid',
+            total: '220',
+            actions: 'View'
+        }
+    ];
 
     return(
         <div>
@@ -52,36 +68,24 @@ const OrdersData = () => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        <TableRow
-                        sx={tableSx}
-                        >
-                        <TableCell component="th" scope="row">
-                        HB-01059-AE
-                        </TableCell>
-                        <TableCell align="center">10/01/2024</TableCell>
-                        <TableCell align="center">
-                            <Chip label="Paid" component="a" href="#" clickable sx={{borderRadius: '4px'}} color="success"/>
-                        </TableCell>
-                        <TableCell align="center">AED 400</TableCell>
-                        <TableCell align="center" sx={{color: '#9a8254', fontSize: '16px', cursor: 'pointer'}} onClick={() => setopenReceiptModal(!openReceiptModal)}>View
-                            <ReceiptPopup show={openReceiptModal} close={() => setopenReceiptModal(false)} closePopup={closePopup}/>
-                        </TableCell>
-                        </TableRow>
-                        <TableRow
-                        sx={tableSx}
-                        >
-                        <TableCell component="th" scope="row">
-                        HB-01060-AE
-                        </TableCell>
-                        <TableCell align="center">10/04/2024</TableCell>
-                        <TableCell align="center">
-                            <Chip label="Pending" component="a" href="#" clickable sx={{borderRadius: '4px'}}/>
-                        </TableCell>
-                        <TableCell align="center">AED 1400</TableCell>
-                        <TableCell align="center" sx={{color: '#9a8254', fontSize: '16px', cursor: 'pointer'}} onClick={() => setopenReceiptModal(!openReceiptModal)}>View
-                            <ReceiptPopup show={openReceiptModal} close={() => setopenReceiptModal(false)} closePopup={closePopup}/>
-                        </TableCell>
-                        </TableRow>
+                    {orders.map((order, index) => (
+                       <TableRow
+                       sx={tableSx}  key={index}
+                       >
+                            <TableCell component="th" scope="row">
+                            {order.id}
+                            </TableCell>
+                            <TableCell align="center">{order.date}</TableCell>
+                            <TableCell align="center">
+                                <Chip label={order.status} component="a" href="#" clickable sx={{borderRadius: '4px'}} color="success"/>
+                            </TableCell>
+                            <TableCell align="center">AED {order.total}</TableCell>
+                            <TableCell align="center" sx={{color: '#9a8254', fontSize: '16px', cursor: 'pointer'}} onClick={() => setopenReceiptModal(!openReceiptModal)}>{order.actions}
+                                <ReceiptPopup show={openReceiptModal} close={() => setopenReceiptModal(false)} closePopup={closePopup}/>
+                            </TableCell>
+                       </TableRow> 
+                    ) 
+                    )}
                     </TableBody>
                 </Table>
             </TableContainer>

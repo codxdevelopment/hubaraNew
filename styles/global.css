@@ -62,6 +62,9 @@ img {
   .scrollTop {
     display: none !important;
   }
+  .hiddenHbSm {
+    display: none !important;
+  }
 }
 @keyframes fixedTop {
   0% {

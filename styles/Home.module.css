@@ -156,10 +156,20 @@
   font-size: 16px;
   font-weight: bold;
 }
+.regularFontHeadingLarge{
+  font-family: "regular" !important;
+  font-size: 32px;
+  font-weight: bold;
+}
 .regularFontHeadingGray{
   font-family: "regular" !important;
   font-size: 16px;
   font-weight: bold;
+  color: var(--textGrayColor);
+}
+.regularFontSmallHeadingGray{
+  font-family: "regular" !important;
+  font-size: 14px;
   color: var(--textGrayColor);
 }
 .popupStack p{
@@ -202,6 +212,21 @@
   }
   .container {  
     padding: 0 !important;
+  }
+  .regularFontHeadingLarge{
+    font-size: 20px;
+  }
+  .popupStack{
+    flex-wrap: wrap;
+  }
+  .popupStack hr{
+    display: none;
+  }
+  .popupStack div{
+    padding: 10px 0;
+  }
+  .popupStack span{
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
