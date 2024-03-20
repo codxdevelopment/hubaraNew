@@ -124,6 +124,13 @@
   color: var(--textBlackColor);
   text-align: center;
 }
+.paragraphTextGray {
+  font-size: 14px;
+  font-family: "regular";
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--textGrayColor);
+}
 .contentBox{
   max-width: 80%;
   margin: 0 auto;
@@ -143,6 +150,26 @@
   display:  flex;
   justify-content: center;
   align-items: center;
+}
+.regularFontHeading{
+  font-family: "regular" !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.regularFontHeadingGray{
+  font-family: "regular" !important;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--textGrayColor);
+}
+.popupStack p{
+  font-family: "regular" !important;
+  font-size: 12px;
+}
+.popupStack span{
+  font-family: "regular" !important;
+  font-weight: bold;
+  font-size: 13px;
 }
 @media (max-width: 768px) {
   .paragraphBox{
