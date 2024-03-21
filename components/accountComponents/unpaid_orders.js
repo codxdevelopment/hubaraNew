@@ -57,14 +57,14 @@ const UnpaidOrdersData = () => {
     return(
         <div>
             <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650}} aria-label="simple table">
+                <Table sx={{ minWidth: 'fit-content'}} aria-label="simple table">
                     <TableHead>
                         <TableRow sx={tableHeaderSx}>
                             <TableCell>Orders</TableCell>
                             <TableCell align="center">Date</TableCell>
                             <TableCell align="center">Payment Status</TableCell>
                             <TableCell align="center">Total</TableCell>
-                            <TableCell align="center">Actions</TableCell>
+                            <TableCell align="center" className="md:table-cell hiddenHbSm">Actions</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -77,10 +77,10 @@ const UnpaidOrdersData = () => {
                             </TableCell>
                             <TableCell align="center">{order.date}</TableCell>
                             <TableCell align="center">
-                                <Chip label={order.status} component="a" href="#" clickable sx={{borderRadius: '4px'}} />
+                                <Chip label={order.status} component="a" href="#" clickable sx={{borderRadius: '4px'}} onClick={() => setopenReceiptModal(!openReceiptModal)} />
                             </TableCell>
                             <TableCell align="center">AED {order.total}</TableCell>
-                            <TableCell align="center" sx={{color: '#9a8254', fontSize: '16px', cursor: 'pointer'}} onClick={() => setopenReceiptModal(!openReceiptModal)}>{order.actions}
+                            <TableCell align="center" className="md:table-cell hiddenHbSm" sx={{color: '#9a8254', fontSize: '16px', cursor: 'pointer'}} onClick={() => setopenReceiptModal(!openReceiptModal)}>{order.actions}
                                 <ReceiptPopup show={openReceiptModal} close={() => setopenReceiptModal(false)} closePopup={closePopup}/>
                             </TableCell>
                        </TableRow> 

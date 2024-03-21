@@ -167,6 +167,7 @@ export default function Navbar({ home }) {
                       height={32}
                       width={42}
                       alt={name}
+                      style={{cursor:'pointer'}}
                     />
                   </Badge>
                   {/* Cart Menu Drawer */}
@@ -288,6 +289,7 @@ export default function Navbar({ home }) {
                       height={32}
                       width={42}
                       alt={name}
+                      style={{cursor:'pointer'}}
                     />
                   </Badge>
                   <Link className={navStyles.bottomLink} href="/account" >

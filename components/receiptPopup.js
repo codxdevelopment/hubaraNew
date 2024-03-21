@@ -111,7 +111,7 @@ export default function ReceiptPopup(props) {
             </Stack> 
             <h1 className={`py-5 ${utilStyles.regularFontHeading}`}>ORDER DETAILS</h1>
             <TableContainer>
-                <Table sx={{ minWidth: 650, border: '1px solid #e1e1e1', borderRadius: '3px'}} aria-label="simple table">
+                <Table sx={{ minWidth: 'fit-content', border: '1px solid #e1e1e1', borderRadius: '3px'}} aria-label="simple table">
                     <TableHead>
                         <TableRow sx={tableHeaderSx}>
                             <TableCell>Product</TableCell>
