@@ -48,6 +48,18 @@
   justify-content: center;
   align-items: center;
 }
+.menuDrawer{
+  background: #fafcff;
+}
+@media(max-width:768px){
+  .regularFont {
+    font-size: 16px;
+  }
+  .menuListing{
+    border-bottom: 1px solid silver;
+    padding: 16px 0 !important;
+  }
+}
 @keyframes fixedTop{
   0% {
     transform: translateY(-100%);

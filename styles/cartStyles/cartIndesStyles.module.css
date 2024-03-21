@@ -24,11 +24,21 @@
   width: 100%;
   padding: 10px;
 }
+.itemParentDivSideCart{
+  width: 100%;
+  padding: 10px;
+}
 .itemName {
   color: (--textBlackColor);
   font-family: "regular";
   font-size: 24px;
   margin-bottom: 10px;
+}
+.itemNameSideCart {
+  color: (--textBlackColor);
+  font-family: "regular";
+  font-size: 14px;
+  margin-bottom: 4px;
 }
 
 .colorAndSize {
@@ -41,6 +51,25 @@
 .qunatityCounterParent {
   height: 35px;
   margin-left: 10px;
+  font-family: "regular";
+}
+.SideCartItemsContainer{
+  max-height: 370px;
+  max-width: 90%;
+  overflow-y: auto;
+}
+.SideCartItemsContainer::-webkit-scrollbar {
+  width: 4px;
+}
+ 
+.SideCartItemsContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0);
+}
+ 
+.SideCartItemsContainer::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 2px;
+  outline: 1px solid #fff;
 }
 .decreaseBtn {
   border: 1px solid #dcdcdc;
@@ -118,11 +147,22 @@
   width: 90px; /* Initial width for the image */
   height: 120px; /* Initial height for the image */
 }
+.imageContainerSideCart{
+  width: 80px; /* Initial width for the image */
+  height: 100px; /* Initial height for the image */
+}
+.imageContainerSideCart img{
+  border-radius: 4px !important;
+}
 
 @media only screen and (max-width: 767px) {
   .imageContainer {
     max-width: 60px; /* Image container takes full width of its parent */
     height: 80px; /* Allow image height to adjust based on width */
+  }
+  .imageContainerSideCart{
+    width: 60px; /* Initial width for the image */
+    height: 80px; /* Initial height for the image */
   }
   .itemName{
     font-size: 16px;

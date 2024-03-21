@@ -21,6 +21,7 @@ import navStyles from "../styles/nav.module.css";
 import Badge from '@mui/material/Badge';
 import EastIcon from '@mui/icons-material/East';
 import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
+import CartDrawer from './cartDrawer';
 const name = "Hubara";
 export const siteTitle = "Hubara | Luxury Clothing Brand Dubai | UAE";
 export default function Navbar({ home }) {
@@ -75,7 +76,7 @@ export default function Navbar({ home }) {
   ];
 // Setting up menus in a global array
   const menuItems = menuTitles.map((item, index) => (
-    <ListItem key={index}>
+    <ListItem key={index} className={navStyles.menuListing} >
       <Link className={navStyles.regularFont} href={item.link} >
         {item.title}
       </Link>
@@ -171,7 +172,7 @@ export default function Navbar({ home }) {
                     />
                   </Badge>
                   {/* Cart Menu Drawer */}
-                  <Drawer open={cartOpen} onClose={toggleCartDrawer(false)} anchor="right"
+                  {/* <Drawer open={cartOpen} onClose={toggleCartDrawer(false)} anchor="right"
                   >
                       <Grid
                         container
@@ -193,7 +194,8 @@ export default function Navbar({ home }) {
                         </Grid>
                       </Grid>
                       <Divider variant="middle"/>
-                    </Drawer>
+                    </Drawer> */}
+                    <CartDrawer open={cartOpen} close={toggleCartDrawer(false)}/>
                     <Link className={navStyles.bottomLink} href="/account" >
                       <Image
                         priority
@@ -240,14 +242,15 @@ export default function Navbar({ home }) {
                       />
                     </IconButton>
                     {/* Menu Drawer for small screens  */}
-                    <Drawer open={open} onClose={toggleDrawer(false)}>
+                    <Drawer open={open} onClose={toggleDrawer(false)} sx={{background: "#fafcff"}} className="menuDrawer">
                       <Box
-                        sx={{ width: 250 }}
+                        sx={{ width: 296, padding:'0 16px'  }}
                         role="presentation"
                         onClick={toggleDrawer(false)}
                       >
+                        <h1 className=" pt-5 pb-2 mb-3" style={{fontFamily:'regular', borderBottom: "2px solid #949494"}}>Menu</h1>
                         <List>{menuItems}</List>
-                        <Divider />
+                        {/* <Divider /> */}
                       </Box>
                     </Drawer>
                   </Box>
@@ -274,24 +277,24 @@ export default function Navbar({ home }) {
                   </Link>
                 </Grid>
                 <Grid xs={3} gap={1} className="flex justify-center">
-                <Badge badgeContent={1} 
-                    sx={{
-                      "& .MuiBadge-badge": {
-                        color: "white",
-                        backgroundColor: "#9a8254"
-                      }
-                    }}
-                    onClick={toggleCartDrawer(true)}
-                  >
-                    <Image
-                      priority
-                      src="/images/icons/cart4.svg"
-                      height={32}
-                      width={42}
-                      alt={name}
-                      style={{cursor:'pointer'}}
-                    />
-                  </Badge>
+                  <Badge badgeContent={1} 
+                      sx={{
+                        "& .MuiBadge-badge": {
+                          color: "white",
+                          backgroundColor: "#9a8254"
+                        }
+                      }}
+                      onClick={toggleCartDrawer(true)}
+                    >
+                      <Image
+                        priority
+                        src="/images/icons/cart4.svg"
+                        height={32}
+                        width={42}
+                        alt={name}
+                        style={{cursor:'pointer'}}
+                      />
+                    </Badge>
                   <Link className={navStyles.bottomLink} href="/account" >
                   <Image
                     priority
