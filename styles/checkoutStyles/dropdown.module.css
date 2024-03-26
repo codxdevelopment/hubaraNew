@@ -1,0 +1,16 @@
+.parent {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: "regular";
+  color: var(--textGrayColor);
+  font-size: 14px;
+  width: 95%; /* Expand the select element to fill its container */
+  position: relative; /* Position the select element within its container */
+  box-sizing: border-box;
+  border: 1px solid transparent; /* Initially set border to transparent */
+  outline: none; /* Remove outline on focus */
+}
+
+.parent select:focus {
+  border-color: transparent !important; /* Use !important to ensure override */
+}

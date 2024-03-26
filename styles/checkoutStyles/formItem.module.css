@@ -1,0 +1,23 @@
+.parent {
+  height: 70px;
+}
+.titleDiv {
+  background-color: rgb(255, 255, 255) !important;
+  color: var(--textBlackColor);
+  font-size: 14px;
+  font-family: "regular";
+  font-weight: 600;
+  margin-left: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.borderedDiv {
+  border: 1px solid var(--textBlackColor);
+  border-radius: 8px;
+  height: 49px;
+  margin-top: -10px;
+}
+/* .inputText {
+  margin-top: 20px;
+} */

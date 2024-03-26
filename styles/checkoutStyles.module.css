@@ -1,0 +1,22 @@
+.breadContainer {
+  font-size: 20px;
+  font-family: "regular";
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: var(--textBlackColor);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.checkoutOutText {
+  color: var(--primary-color);
+  cursor: alias;
+}
+
+@media screen and (max-width: 768px) {
+  .breadContainer {
+    font-size: 15px;
+  }
+}

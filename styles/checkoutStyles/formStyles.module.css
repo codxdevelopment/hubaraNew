@@ -1,0 +1,14 @@
+.shippingText {
+  text-transform: uppercase;
+  color: var(--textBlackColor);
+  font-family: "regular";
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.inputColor {
+  margin-top: 10px;
+  font-family: "regular";
+  color: var(--textGrayColor);
+  font-size: 14px;
+}
