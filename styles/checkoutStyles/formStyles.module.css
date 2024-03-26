@@ -12,3 +12,28 @@
   color: var(--textGrayColor);
   font-size: 14px;
 }
+.rememberMeButton {
+  color: var(--textBlackColor);
+  font-family: "regular";
+  margin-left: 12px;
+}
+.proceedBtn {
+  margin-top: 20px;
+  background: linear-gradient(
+    180deg,
+    #9a8254,
+    rgba(154, 130, 84, 0.42)
+  ) !important;
+  border: initial !important;
+  padding: 15px !important;
+  border-radius: 8px;
+  color: white;
+  font-family: "regular";
+  font-weight: 900;
+  font-size: 14px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center;
+  cursor: pointer;
+}

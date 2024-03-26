@@ -1,6 +1,13 @@
 .parent {
   height: 70px;
+  margin-bottom: 20px;
 }
+
+.parentSecond {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
 .titleDiv {
   background-color: rgb(255, 255, 255) !important;
   color: var(--textBlackColor);
@@ -18,6 +25,9 @@
   height: 49px;
   margin-top: -10px;
 }
-/* .inputText {
-  margin-top: 20px;
-} */
+.borderedDivSecond {
+  border: 1px solid var(--textBlackColor);
+  border-radius: 8px;
+  height: 149px;
+  margin-top: -10px;
+}
